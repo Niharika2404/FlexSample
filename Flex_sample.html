@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF=8">
+        <title>CodePen - Demo FlexBox</title>
+        <style>
+            body
+             { 
+                padding: 2em;
+             }
+
+             .headerContainer
+             {
+                 display: flex;
+                 flex-flow: column wrap;
+                 align-content: center;
+                 font-weight: bold;
+                 padding: 10px;
+                 background-color: brown;
+             }
+
+             .mainContainer
+             {
+                display: flex;
+                flex-flow: row wrap;
+                text-align: center;
+                font-weight: bold;
+             }
+
+             .footerContainer
+             {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                font-weight: bold;
+                padding: 10px;
+                background-color: rgb(100, 210, 237);
+             }
+
+             .mainContainer
+             {
+                display: flex;
+                flex-flow: row wrap;
+                align-content: center;
+                background-color: rgb(112, 187, 216);
+                font-weight: bold;
+                padding: 10px;
+             }
+
+             .mainContentItems
+             {
+                 text-align: left;
+                 background-color: rgb(210, 153, 30);
+             }
+
+             .article
+             {
+                 flex-flow: column wrap;
+                 padding: 10px;
+                 margin: 10px;
+                 background-color: darkcyan;
+             }
+
+             .article
+             {
+                flex-flow: column wrap;
+                 padding: 10px;
+                 margin: 10px;
+                 background-color: rgb(0, 88, 139);
+             }
+
+             .article
+             {
+                flex-flow: column wrap;
+                 padding: 10px;
+                 margin: 10px;
+                 background-color: rgb(0, 139, 93);
+             }
+
+             .sideBarLeftItem
+             {
+                 background-color: rgb(122, 233, 200);
+             }
+
+             .sideBarRightItem
+             {
+                 background-color: darkslategrey;
+             }
+
+             .sideBarItem
+             {
+                 flex: 1 0 0;
+                 border: 0px solid green;
+             }
+
+            .mainContentItems
+            {
+                flex: 3 0px;
+            }
+
+            .sideBarLeftItem
+            {
+                order: 1;
+            }
+
+            .mainContentItems
+            {
+                order: 2;
+            }
+
+            .sideBarRightItem
+            {
+                order: 3;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header class="headerContainer"><h1>HEADER-Sample FlexBox</h1></header>
+        <div class="mainContainer">
+
+            <sideBar class="sideBarItem sideBarLeftItem">
+                <div class="center"><p>Left SideBar</p></div>
+            </sideBar>
+
+            <section class="mainContentItems">
+                <article>
+                    <h2>First Article</h2>
+
+                    <p>Articles are words that define a noun as specific or unspecific.
+                         Consider the following examples: After the long day, the cup of tea tasted particularly good. 
+                         By using the article the, we've shown that it was one specific day 
+                         that was long and one specific cup of tea that tasted good.</p>
+                </article>
+                <article>
+                    <p>
+                        <h2>Second Article</h2>
+
+                        Basically, an article is an adjective. Like adjectives, articles modify nouns.
+                         English has two articles: the and a/an. The is used to refer to specific or
+                          particular nouns; a/an is used to modify non-specific or non-particular nouns. 
+                          We call the the definite article and a/an the indefinite article.
+                    </p>
+                </article>
+                <article>
+                    <p>
+                        <h2>Third Article</h2>
+
+                        An article is a piece of writing written for a large audience. The main motive 
+                        behind writing an article is that it should be published in either newspapers or
+                         magazines or journals so as to make some difference to the world. It may be the 
+                         topics of interest of the writer or it may be related to some current issues.
+                    </p>
+                </article>
+            </section>
+
+
+            <sideBar class="sideBarItem sideBarRightItem">
+                <div class="center"><p>Right SideBar</p></div>
+            </sideBar>
+
+        </div>
+        <footer class="footerContainer">FOOTER</footer>
+    </body>
+</html>
